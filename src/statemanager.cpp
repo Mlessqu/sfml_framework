@@ -35,9 +35,9 @@ void statemanager::update()
 {
     active_state->update();
 }
-void statemanager::draw(sf::RenderWindow &okno)
+void statemanager::draw(sf::RenderWindow &window)
 {
-    active_state->draw(okno);
+    active_state->draw(window);
 }
 statemanager* statemanager::singleton = nullptr;
 statemanager* statemanager::getInstance()

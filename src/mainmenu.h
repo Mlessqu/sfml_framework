@@ -16,7 +16,7 @@ public:
     virtual void resume();
     virtual void handle_events(sf::Event &e);
     virtual void update();
-    virtual void draw(sf::RenderWindow &okno);
+    virtual void draw(sf::RenderWindow &window);
     mainmenu();
 private:
     sf::CircleShape testowe_kolo;

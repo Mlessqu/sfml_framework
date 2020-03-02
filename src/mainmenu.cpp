@@ -29,9 +29,13 @@ void mainmenu::handle_events(sf::Event &e)
     }
 }
 
-void mainmenu::update() {}
-void mainmenu::draw(sf::RenderWindow &okno)
+void mainmenu::update()
 {
-    okno.draw(testowy_kwadrat);
-    okno.draw(testowe_kolo);
+    std::cout << "I just got callbacked! YAY";
+}
+void mainmenu::draw(sf::RenderWindow &window)
+{
+    window.clear(sf::Color::Blue);
+    window.draw(testowy_kwadrat);
+    window.draw(testowe_kolo);
 }
