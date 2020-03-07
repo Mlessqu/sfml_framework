@@ -10,8 +10,12 @@
 class button {
 public:
     button(){}
-    std::function<void()> callback;
+    button(sf::Vector2f,sf::Text temp);
+    button(sf::Vector2f,sf::Text temp, std::function<void()> ftemp);
 
+    std::function<void()> callback;
+    //this is how you callback
+    //przycisk.callback = [&]{menu.update();};
 };
 
 

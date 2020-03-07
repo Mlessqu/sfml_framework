@@ -12,7 +12,7 @@ const int szerokosc = 800;
 statemanager* stan;
 mainmenu menu;
 button przycisk;
-
+sf::Text glowna_czcionka;
 int main()
 {
     init();

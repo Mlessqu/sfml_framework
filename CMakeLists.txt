@@ -7,7 +7,7 @@ find_package(SFML 2.5.1 COMPONENTS system window graphics network audio REQUIRED
 include_directories(src)
 add_executable(sfml_framework
     src/main.cpp
-        src/statemanager.cpp src/statemanager.h src/state.cpp src/state.h src/mainmenu.cpp src/mainmenu.h src/intro.cpp src/intro.h src/button.cpp src/button.h)
+        src/statemanager.cpp src/statemanager.h src/state.cpp src/state.h src/mainmenu.cpp src/mainmenu.h src/intro.cpp src/intro.h src/button.cpp src/button.h src/textbox.cpp src/textbox.h)
 
 
 target_link_libraries(sfml_framework sfml-audio sfml-graphics sfml-window sfml-system )
